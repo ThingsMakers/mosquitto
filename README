@@ -4,4 +4,5 @@ docker container run -d \
         -v /docker-vol/mosquitto/config:/mosquitto/config \
         -v /docker-vol/mosquitto/data:/mosquitto/data \
         -v /docker-vol/mosquitto/log:/mosquitto/log \
+	--restart=always \
         eclipse-mosquitto:1.5.4
